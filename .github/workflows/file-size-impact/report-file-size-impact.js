@@ -2,8 +2,6 @@ const { reportFileSizeImpact, readGithubWorkflowEnv } = require("@jsenv/file-siz
 
 reportFileSizeImpact({
   ...readGithubWorkflowEnv(),
-  projectDirectoryUrl: process.env.GITHUB_WORKSPACE,
-  installCommand: "npm install",
   buildCommand: "npm run build:prod",
   trackingConfig: {
     lib: {
