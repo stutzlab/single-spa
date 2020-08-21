@@ -4,7 +4,7 @@ reportFileSizeImpact({
   ...readGithubWorkflowEnv(),
   projectDirectoryUrl: process.env.GITHUB_WORKSPACE,
   installCommand: "npm install",
-  buildCommand: "npm run build",
+  buildCommand: "npm run build:prod",
   trackingConfig: {
     lib: {
       "./lib/**/*.js": true,
