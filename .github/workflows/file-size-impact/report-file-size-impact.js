@@ -5,8 +5,8 @@ reportFileSizeImpact({
   buildCommand: "npm run build:prod",
   trackingConfig: {
     lib: {
-      "./lib/umd/*.js": true,
-      "./lib/umd/*.map": false,
+      "./lib/**/*.js": true,
+      "./lib/**/*.map": false,
     },
   },
 });
