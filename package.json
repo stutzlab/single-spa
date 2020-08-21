@@ -7,7 +7,7 @@
   "module": "lib/esm/single-spa.min.js",
   "scripts": {
     "build": "yarn clean && concurrently yarn:build:dev yarn:build:prod",
-    "build:prod": "rollup -c --environment NODE_ENV:'production'",
+    "build:prod": "rollup -c --environment NODE_ENV:'production' && cp src/new-dummyfile.js lib/",
     "build:dev": "rollup -c",
     "build:analyze": "rollup -c --environment ANALYZER:'analyzer'",
     "watch": "rollup -c -w",
